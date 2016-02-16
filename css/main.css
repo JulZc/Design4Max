@@ -1,0 +1,69 @@
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Quicksand|Exo+2|Orbitron);
+
+html{
+	width: 100%;
+	margin: 0 0;
+	
+	background-image: url(../img/backgr.jpg);
+	background-size: 100%;
+	
+	font-size: 15px;
+	font-family: Verdana, "Sans-Sarif";
+}
+body{
+	width: 100%;
+	margin: 0 0;
+	background-color: hsla(0,0%,100%, 0.5);
+}
+header{
+	margin: 0 0;
+	padding: 20px;
+	font-size: 40px;
+	background-color: white;
+	font-family: "Orbitron";
+}
+
+/*		Navigationsfenster		*/
+.nav{
+	margin: 0 0;
+	background-color: black;
+	color: white;
+	padding: 20px;
+}.uebersicht{
+	box-shadow: 10px, 10px, 100px, black;
+	background-color: white;
+	width: 20%;
+	padding: 20px;
+	background-color: yellow;
+}
+
+/*		Flexkontainer und Item		*/
+.flex-container{
+	float: left;
+	width: 100%;
+	
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+
+    display: flex;
+    flex-direction: row;	
+	background-color: darkgrey;
+}
+.flex-item {
+	margin: 20px;
+	padding: 10px;
+	width: 50%
+    /*-webkit-flex: 1 1 auto;
+    flex: 1 1 auto;*/
+    -webkit-transition: width 0.7s ease-out;
+    transition: width 0.7s ease-out;
+	background-color: lightgrey;
+}
+
+.description-header{
+	font-size: 60px;
+}.description{
+	font-size: 35px; 
+	text-align: center;
+}
