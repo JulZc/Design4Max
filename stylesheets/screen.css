@@ -1,0 +1,186 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Quicksand|Exo+2|Orbitron);
+
+div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+	width: 100%;
+	margin: 0 0;
+	
+	background-image: url(../img/backgr.jpg);
+	background-size: 100%;
+	
+	font-size: 15px;
+	font-family: Verdana, "Sans-Sarif";
+}
+
+/* line 24, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+
+
+body{
+	width: 100%;
+	margin: 0 0;
+	background-color: #adb7c1;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+header{
+	margin: 0 0;
+	padding: 0px;
+	text-align: left;
+	font-size: 50px;
+	background-color: white;
+	font-family: "Orbitron";
+}
+#nav{
+	margin: 0 0;
+	background-color: black;
+	color: white;
+	padding: 20px;
+	text-align: right;
+}#menue-icon {
+	box-shadow: 0px -5px 0px 1px #FFFFFF, 0px 0px 0px 1px #FFFFFF, 0px 5px 0px 1px #FFFFFF;
+	width: 16px;
+	height: 0px;
+	float: right;
+}
+
+.aside-1 {
+  background: gold;
+}
+
+.main {
+	padding: 0px;
+/* 	display: flex;
+	flex-flow: <'row'> || <'wrap'>;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: space-around;   */
+}
+
+.footer {
+  background: lightgreen;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .div	   { order: 2; }
+  .main    { order: 3; }
+  .footer  { order: 4; }
+  
+  .aside-1 { flex: 0.3 auto; }
+}
+
+.tutorial{
+	margin: 0 0;
+}.description{
+	background-color: blue;
+	
+	white-space: normal;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 0px;
+}
+.flexparent{
+	margin: 0 0;
+
+	display: flex;
+	flex-flow: <‘row’> || <‘wrap’>;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: space-around;
+}.solvation{
+	background-color: red;
+	margin: 20px;
+}.sourcecode{
+	background-color: yellow;
+	margin: 20px;
+	
+	height: 370px;
+	border: 2px double aqua;   
+	background-color: rgba(255,255,255,0.95);	
+}
+
+
+
+
+
+

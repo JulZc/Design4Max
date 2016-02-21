@@ -3,45 +3,165 @@
 	<head>
 		<title>JS Tutorials</title>
 		<meta charset="UTF-8">
-		<link href="./css/main.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		
+       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		
+		<!--[if IE]>
+			<link href="./stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<![endif]-->
+
+		<link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="./stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />		
+		
 		<link href="./img/favico.ico" rel="icon" type="image/png">
 	</head>
 
 
-	<body>
+	<body><div class="wrapper">
 		<header>
-			Max Development
+			<div id="header">
+				Max Development
+			</div>
 		</header>
-
-		<div class="nav">
-		menü 1
-		</div>
-
-		<div class="uebersicht">
-			HTML und CSS<br>
-			JavaScript<br>
-			HTML Graphisch<br>
-			Server Sprachen<br>
-		</div>
-
-		<div class="flex-container">
-			<div class="flex-item description">
-			<span class="description-header">HTML</span><br>
-			Skriptsprache zum Websiten erstellen
-			</div>
-			<div class="flex-item example">
-			HTML Beispiel
-			</div>
-		</div>
-		<div class="flex-container">
-			<div class="flex-item description">
-			<span class="description-header">CSS</span><br>
-			Skriptsprache zur Websitengestalltung
-			</div>
-			<div class="flex-item example">
-			CSS Beispiel
-			</div>
+		
+		<div id="nav">
+			<div id="menue-icon"></div>
 		</div>
 		
-	</body>
+		<aside class="aside aside-1">		
+			<div class="uebersicht">
+				HTML und CSS<br>
+				JavaScript<br>
+				HTML Graphisch<br>
+				Server Sprachen<br>
+			</div>
+		</aside>		
+		
+
+		
+		<article class="main">
+			<div class="tutorial">
+				<div class="description">
+					<p>        
+						Mit Hilfe von JavaScript wird auf einen HTML5- Canvas-Element gezeichnet,<br>
+						<br>
+
+						1 Warten Sie, bis die Seite vollständig geladen ist.<br>
+						2 Verweis auf das Canvas-Element.<br>
+						3 2D- Kontext aus dem Canvas-Element holen.<br>
+						4 Zeichnen mit den Zeichenfunktionen vom 2D- Kontext.<br>
+						<br>                
+						Zunächst wird eine Ereignis-Listener-Funktion an das Fenster angebracht.<br>
+						Diese Funktion wird ausgeführt, wenn die Seite geladen wird.<br>
+						Diese Funktion ruft eine andere Funktion die ich definiert habe auf,<br>
+						init().<br>
+						<br>
+						Zweitens erhält die init(); einen Verweis auf das Canvas-Element <br>
+						mit document.getElementById('id'); auf der Gezeichnet werden soll.<br>
+						<br>
+						Drittens erhält die init(); einen Verweis auf den 2D-Kontext aus dem Canvas-Element mit<br>
+						c.getContext("2D"); <br>
+						<br>
+						Viertens init(); ruft verschiedene Zeichenfunktionen aus dem 2D-Kontext-Objekt auf,<br>
+						die Grafiken auf die Leinwand zeichnen.<br>
+						<br>
+					</p>
+				</div>
+				
+				<div class="flexparent">
+					<div class="solvation">
+						<nav class="navbar navbar-inverse" style="margin: 0 auto;border-bottom:2px solid aqua;">         
+						</nav> 
+						
+						<canvas id="canvas1" height="370" style="position:absolut; z-index:4">Update your FUCKING Browser</canvas>
+					</div>
+					
+					
+					<div class="sourcecode">
+						<nav class="navbar navbar-inverse" style="margin: 0 auto; border-bottom:2px solid aqua;"> 
+							
+							<ul class="nav navbar-nav">
+								
+								<li class="active"><a data-toggle="tab" href="#js1">JS</a></li>
+								<li><a data-toggle="tab" href="#html1">HTML</a></li>
+								<li><a data-toggle="tab" href="#css1">CSS</a></li>
+								
+							</ul>  
+							
+						</nav>
+						
+						
+						<div class="tab-content" style="margin: 0 auto;">
+							<div id="js1" class="tab-pane fade in active">
+								<p style="overflow-y:scroll; height: 300px;">
+						   <b>
+							   // 1. Sicherstellen das die Seite geladen ist<br>
+		//&nbsp;&nbsp;&nbsp;&nbsp;und ruf die Funktion init() auf<br>
+		window.onload = function() {<br>
+		init();<br>
+		}<br>
+		<br>
+		function init() {<br>
+		// 2. Verweis auf das Canvas-Element.<br>
+			var c = document.getElementById("canvas1");<br>
+			<br>
+			// 3. 2D- Kontext aus dem Canvas-Element holen.<br>
+			var ctx = c.getContext("2d");<br>
+			<br>
+			// 4. Zeichnen mit den Zeichenfunktionen vom 2D- Kontext.<br>
+			<br>
+			// Füll Farbe = rgb();<br>
+			// Linien Farbe = rgba();<br>
+			//   a Parameter: Wert 0 ist 0% Tranparent,<br>
+			//   Wert 1 ist 100% Transparent;<br>
+			// Linien Breite = int; */<br>
+			<br>                         
+			ctx.fillStyle = "rgb(5, 50, 250)";<br>
+			ctx.strokeStyle = "rgba(255, 0, 0, 0.3)";<br>
+			ctx.lineWidth = 8;<br>
+			<br>
+			ctx.fillRect(0, 0, 80, 80);<br>
+			ctx.strokeRect(40,40,80,80);<br>
+			ctx.rect(80, 80, 80, 80);<br>
+			<br>
+			ctx.fill();<br>
+			ctx.stroke();<br>
+		}<br>
+							   
+							   
+						  </b>
+							</p> 
+							</div>
+							
+							<div id="html1" class="tab-pane fade">
+								<p>
+									&lt;html&gt;<br>
+									&lt;head&gt;... &lt;/head&gt;<br>
+									&lt;body&gt;<br>
+									... <br>
+									&lt;canvas id="canvas1" width="200" height="200"&gt;<br>
+									Dei Browser Updaten du musst.<br>
+									&lt;/canvas&gt;<br>
+									...<br>                        
+								</p>        
+							</div>
+							
+							<div id="css1" class="tab-pane fade"></div>
+							
+						</div>
+					
+					</div> 
+
+						
+						
+						
+						
+				</div>
+			</div>			
+		</article>	
+		
+		<footer class="footer">Footer</footer>
+	</div></body>
 </html>
