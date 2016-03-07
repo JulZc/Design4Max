@@ -1,0 +1,24 @@
+<p>        
+	Mit Hilfe von JavaScript wird auf einen HTML5- Canvas-Element gezeichnet,<br>
+	<br>
+
+	1 Warten Sie, bis die Seite vollständig geladen ist.<br>
+	2 Verweis auf das Canvas-Element.<br>
+	3 2D- Kontext aus dem Canvas-Element holen.<br>
+	4 Zeichnen mit den Zeichenfunktionen vom 2D- Kontext.<br>
+	<br>                
+	Zunächst wird eine Ereignis-Listener-Funktion an das Fenster angebracht.<br>
+	Diese Funktion wird ausgeführt, wenn die Seite geladen wird.<br>
+	Diese Funktion ruft eine andere Funktion die ich definiert habe auf,<br>
+	init().<br>
+	<br>
+	Zweitens erhält die init(); einen Verweis auf das Canvas-Element <br>
+	mit document.getElementById('id'); auf der Gezeichnet werden soll.<br>
+	<br>
+	Drittens erhält die init(); einen Verweis auf den 2D-Kontext aus dem Canvas-Element mit<br>
+	c.getContext("2D"); <br>
+	<br>
+	Viertens init(); ruft verschiedene Zeichenfunktionen aus dem 2D-Kontext-Objekt auf,<br>
+	die Grafiken auf die Leinwand zeichnen.<br>
+	<br>
+</p>

@@ -1,0 +1,2 @@
+<nav class="navbar navbar-inverse" style="margin: 0 auto;border-bottom:2px solid aqua;"></nav> 
+<div class="tab-content"><canvas id="canvas1" height="370" style="position:absolut; z-index:4">Update your FUCKING Browser</canvas></div>

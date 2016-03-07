@@ -1,0 +1,15 @@
+	<ul> 
+		<li class="active"><a href="#one" >Mouse</a></li>
+		<li class=""><a href="#two">Canvas</a></li>
+		<li class=""><a href="#three" >3</a></li> 
+		<li class=""><a href="#four" >Geolocation</a></li> 
+		<li class=""><a href="#fife" >5</a></li> 
+		<li class=""><a href="#six" >6</a></li> 
+		<li class=""><a href="#seven" >7</a></li> 
+		<li class=""><a href="#eight" >8</a></li> 
+		<li class=""><a href="#nine" >9</a></li> 
+		<li class=""><a href="#ten" >10</a></li> 
+		<li class=""><a href="#eleven" >11</a></li> 
+		<li class=""><a href="#twelve" >12</a></li>                             
+	</ul> 
+				
