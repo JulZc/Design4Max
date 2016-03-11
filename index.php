@@ -16,6 +16,9 @@
 		<link href="./stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />		
 		
 		<link href="./img/favico.ico" rel="icon" type="image/png">
+		
+		<script src="./js/main.js"></script>
+		<script src="./js/eventHandler.js"></script>
 	</head>
 
 
@@ -27,7 +30,7 @@
 		</header>
 		
 		<div id="nav" class="footer-header">
-			<div id="menue-icon"></div>
+			<div id="fadeinMenue" onClick="fadeinMenue()"><div id="menue-icon"></div></div>
 		</div>
 		
 		<aside class="aside aside-1">		
@@ -57,6 +60,10 @@
 			</div>			
 		</article>	
 		
-		<footer class="footer footer-header"">Footer</footer>
+		<footer class="footer footer-header">Footer</footer>
+		
+		<script>
+			window.addEventListener( 'resize', onWindowResize, false );
+		</script>
 	</div></body>
 </html>
