@@ -1,16 +1,19 @@
 function fadeinMenue(){
-	var fadeDive = document.createElement("div");
-	fadeDive.style.backgroundColor = "rgba(00, 00, 00, 0.7)";
-	fadeDive.setAttribute("PageMenue", "fadeDiv");
+	var fadeDiv = document.createElement("div");
+	fadeDiv.style.backgroundColor = "rgba(00, 00, 00, 0.9)";
+	fadeDiv.setAttribute("id", "PageMenue");
 	
 	
-	fadeDive.style.position = "fixed";
-	fadeDive.style.top = "0px";
-	fadeDive.style.left = "0px";
-	fadeDive.style.width = window.innerWidth + "px";
-	fadeDive.style.height = window.innerHeight + "px";
-	document.body.appendChild(fadeDive);   
+	fadeDiv.style.position = "fixed";
+	fadeDiv.style.top = "0px";
+	fadeDiv.style.left = "0px";
+	fadeDiv.style.width = window.innerWidth + "px";
+	fadeDiv.style.height = window.innerHeight + "px";
+	document.body.appendChild(fadeDiv);  
+	fadeDiv.innerHTML = "<ul class='fadeDivUL' onclick='rmMenue()'><li class='fadeDivLI'><a href='#'>PHP</a></li><li class='fadeDivLI'><a href='#'>C#</a></li><li class='fadeDivLI'><a href='#'>JavaScript</a></li></ul>";	
+}
 
-	console.log(window.innerHeight + "px Höhe");
-	console.log(window.innerWidth + "px Breite");
+function rmMenue(){
+	var fadeDiv = document.getElementById('PageMenue');
+	fadeDiv.parentNode.removeChild(fadeDiv);
 }
