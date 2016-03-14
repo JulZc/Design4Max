@@ -24,19 +24,17 @@
 
 	<body><div class="wrapper">
 		<header>
-			<div id="header">
-				Max Development
-			</div>
+			Max Development
 		</header>
 		
+		<!--schwarzes Menüband mit Icon-->
 		<div id="nav" class="footer-header">
 			<div id="fadeinMenue" onClick="fadeinMenue()"><div id="menue-icon"></div></div>
 		</div>
 		
+		<!--Linkes Menüband-->
 		<aside class="aside aside-1">		
-			 <!--div class="uebersicht"-->
-				<?PHP	include("./include/navs/navJS.txt")?>
-			<!--/div-->
+			<?PHP	include("./include/navs/navJS.txt")?>
 		</aside>		
 		
 
@@ -62,6 +60,7 @@
 		
 		<footer class="footer footer-header">Footer</footer>
 		
+		<!--EventListeners-->
 		<script>
 			window.addEventListener( 'resize', onWindowResize, false );
 		</script>

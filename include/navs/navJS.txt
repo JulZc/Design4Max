@@ -1,15 +1,15 @@
-	<ul> 
-		<li class="navLI"><a href="#one" >Mouse</a></li>
-		<li class="navLI"><a href="#two">Canvas</a></li>
-		<li class="navLI"><a href="#three" >Beispiel 3</a></li> 
-		<li class="navLI"><a href="#four" >Geolocation</a></li> 
-		<li class="navLI"><a href="#fife" >Beispiel 5</a></li> 
-		<li class="navLI"><a href="#six" >Beispiel 6</a></li> 
-		<li class="navLI"><a href="#seven" >Beispiel 7</a></li> 
-		<li class="navLI"><a href="#eight" >Beispiel 8</a></li> 
-		<li class="navLI"><a href="#nine" >Beispiel 9</a></li> 
-		<li class="navLI"><a href="#ten" >Beispiel 10</a></li> 
-		<li class="navLI"><a href="#eleven" >Beispiel 11</a></li> 
-		<li class="navLI"><a href="#twelve" >Beispiel 12</a></li>                             
-	</ul> 
-				
+<ul style="margin: 0px; padding: 0px;"> 
+	<a href="#one" ><li class="navLI">Mouse</li></a>
+	<a href="#two"><li class="navLI">Canvas</li></a>
+	<a href="#three" ><li class="navLI">Beispiel 3</li> </a>
+	<a href="#four" ><li class="navLI">Geolocation</li></a> 
+	<a href="#fife" ><li class="navLI">Beispiel 5</li></a> 
+	<a href="#six" ><li class="navLI">Beispiel 6</li></a> 
+	<a href="#seven" ><li class="navLI">Beispiel 7</li></a> 
+	<a href="#eight" ><li class="navLI">Beispiel 8</li></a>
+	<a href="#nine" ><li class="navLI">Beispiel 9</li> </a>
+	<a href="#ten" ><li class="navLI">Beispiel 10</li> </a>
+	<a href="#eleven" ><li class="navLI">Beispiel 11</li> </a>
+	<a href="#twelve" ><li class="navLI">Beispiel 12</li></a>                             
+</ul> 
+			
